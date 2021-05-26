@@ -73,6 +73,9 @@ p.solve = function (x) {
 CubicBezier.linear = new CubicBezier(0, 0, 1, 1);
 CubicBezier.ease = new CubicBezier(0.25, 0.1, 0.25, 1);
 CubicBezier.easeIn = new CubicBezier(0.42, 0, 1, 1);
+CubicBezier['ease-in'] = CubicBezier.easeIn;
 CubicBezier.easeOut = new CubicBezier(0, 0, 0.58, 1);
+CubicBezier['ease-out'] = CubicBezier.easeOut;
 CubicBezier.easeInOut = new CubicBezier(0.42, 0, 0.58, 1);
+CubicBezier['ease-in-out'] = CubicBezier.easeInOut;
 export default CubicBezier;
